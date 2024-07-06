@@ -102,7 +102,7 @@ const claimEnergy = async (token, uid, amount, includes, type, id) => {
         },
       }
     );
-    console.log(response.data.msg);
+    return response.data.msg;
   } catch (error) {
     throw error;
   }
