@@ -81,12 +81,10 @@ const main = async () => {
       }
     };
 
-    // Run the code immediately when the script starts
     await runCode();
 
-    // Set up interval to run the code every 86400 seconds (1 day)
     setInterval(runCode, 86400 * 1000);
-    console.log("Retrying in 24 hours......");
+    console.log('Retrying in 24 hours......');
   } catch (error) {
     failedLog(error.message);
   }
